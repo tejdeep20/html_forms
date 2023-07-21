@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <title>
+    student registration form
+  </title>
+  <link rel="stylesheet" href="std_form.css">
+
+  <script src="std_form.js"></script>
+</head>
+
+<body>
+  <center>
+
+    <form action="">
+      <h2 height>Student Registration form</h2>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td class="input"><input onchange="s_name()" id="stdname" type="text" required placeholder="Student Name">
+            <label for="name" id="name_label">
+            </label>
+          </td>
+        <tr>
+          <td>Date of Birth</td>
+          <td class="input"><input style="margin-bottom: 10px;  height: 0.8cm;" type="date" required placeholder="">
+          </td>
+        </tr>
+        <tr>
+          <td>gender</td>
+          <td class="input">
+            <input style="margin-bottom: 10px; height: 0.3cm;" type="radio" name="gender">
+            Male &nbsp
+            <input style="margin-bottom: 10px;height: 0.3cm;" type="radio" name="gender">
+            Female
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td class=" input"><input onchange="mail()" id="Email" type="text" required placeholder="Enter email">
+            <label for="email" id="mail_label">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td class="input"><input onchange="password()" id="main_password" type="text" required
+              placeholder="Enter Password">
+            <label for="password" id="psw_label">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>confirm password</td>
+          <td class="input"><input id="re_password" type="text" required placeholder="confirm password"
+              onchange="re_psw()">
+            <label for="password" id="re_psw_label">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>Courses</td>
+          <td class="input">
+            <select required name="courses" id="course">
+              <option value="DIPLOMA">Diploma</option>
+              <option value="B-Tech">B-Tech</option>
+              <option value="M-tech">M-Tech</option>
+          </td>
+        <tr>
+          <td>Branches</td>
+          <td>
+            <select required name="branch" id="branch">
+              <option value="CSE">CSE</option>
+              <option value="EEE">EEE</option>
+              <option value="ECE">ECE</option>
+              <option value="MECH">MECH</option>
+              <option value="CIVIL">CIVIL</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>semesters</td>
+          <td>
+            <select required name="semester" id="semester">
+              <option value="sem1">semester-1</option>
+              <option value="sem2">semester-2</option>
+              <option value="sem3">semester-3</option>
+              <option value="sem4">semester-4</option>
+              <option value="sem5">semester-5</option>
+              <option value="sem6">semester-6</option>
+              <option value="sem7">semester-7</option>
+              <option value="sem8">semester-8</option>
+            </select>
+          </td>
+        </tr>
+        </tr>
+        <tr>
+          <td><button type="submit"
+              style="font-weight: bold;height: 0.8cm; width:2.5cm;margin-left: 2.8cm; margin-top: 30px;">Register</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </center>
+</body>
+
+</html>
